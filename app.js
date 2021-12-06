@@ -15,6 +15,7 @@ app.use(bodyParser.json());
 
 //rota
 app.get("/", async (req, res) => {
+    res.send("Backend!")
     res.json(values.descriptionJSON);
 })
 
