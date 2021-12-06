@@ -15,12 +15,12 @@ app.use(bodyParser.json());
 
 //rota
 app.get("/", async (req, res) => {
-    res.send("Backend!")
+    console.log("Backend!")
     res.json(values.descriptionJSON);
 })
 
 app.post("/description", async (req, res) => {
-    res.send("Backend/description")
+    console.log("Backend/description " + req.body)
     const descriptionText = req.body;
 
     console.log(descriptionText);
