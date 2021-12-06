@@ -20,6 +20,7 @@ app.get("/", async (req, res) => {
 })
 
 app.post("/description", async (req, res) => {
+    res.send("Backend/description")
     const descriptionText = req.body;
 
     console.log(descriptionText);
