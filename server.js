@@ -11,7 +11,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 var allowedOrigins = ['http://localhost:3000',
-                      'http://yourapp.com'];
+                      'https://forrpg.herokuapp.com/'];
 app.use(cors({
   origin: function(origin, callback){
 
