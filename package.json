@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node server.js"
   },
   "author": "Artenks <68568918+arthemioKalil@users.noreply.github.com>",
   "license": "ISC",
