@@ -11,14 +11,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 
-
-const corsOptions ={
-    origin:'*', 
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200,
- }
- 
- app.use(cors(corsOptions)) // Use this after the variable declaration
+ app.use(cors())
 
 //rota
 app.get("/", async (req, res) => {
