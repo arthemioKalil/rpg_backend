@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 
 
 //rota
-app.get("/desc", async (req, res) => {
+app.get("/", async (req, res) => {
     res.json(values.descriptionJSON);
 })
 
