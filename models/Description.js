@@ -17,6 +17,6 @@ const Description = db.define('descriptions', {
 });
 
 //cria a tabela caso nao exista uma tabela
-Description.sync({ force: true });
+// Description.sync({ alter: true });
 
 module.exports = Description;

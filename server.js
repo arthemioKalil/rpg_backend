@@ -5,13 +5,15 @@ const axios = require('axios');
 
 const values = require('./values.js');
 
-app.use(cors());
-
 const Description = require('./models/Description');
 const bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
 
+app.use(cors({
+    origin: 'https://forrpg.herokuapp.com/',
+    credentials: true, 
+}));
 
 //rota
 app.get("/", async (req, res) => {
