@@ -29,6 +29,4 @@ app.post("/description", async (req, res) => {
 
 });
 
-app.listen(process.env.PORT ||3000, () => {
-    // console.log("Servidor ligado na porta 6565 | http://localhost:6565/");
-});
+app.listen(process.env.PORT || 3000);
